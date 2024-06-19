@@ -30,7 +30,6 @@ h4 {
 }
 
 p {
-    font-size: 16px;
     line-height: 36px;
 }
 
@@ -134,9 +133,12 @@ header nav ul li a {
 /******** FOOTER STYLES ********/
 footer {
     text-align: center;
-
+    margin-top: 8px;
 }
 
 footer span {
-
+    font-family: "Galada", cursive;
+    text-transform: lowercase;
+    color: #45610e;
+    font-size: 14px;
 }
