@@ -1,7 +1,11 @@
 /******** GLOBAL STYLES ********/
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: .9em;
     color: #000;
 }
 
@@ -14,34 +18,46 @@ h4 {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 1.875em;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 h4 {
-    font-size: 12px;
+    font-size: .75em;
 }
 
 p {
+    font-size: 1rem;
     line-height: 36px;
 }
 
 .content-wrapper {
-    width: 1200px;
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 /******** HEADER STYLES ********/
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 header h1 {
-    width: 300px;
     margin: 0;
-    padding: 36px 0;
+    padding: 38px 0 20px 0;
+    border-bottom: 3px solid #77a466;
+    width: 100%;
 }
 
 header h1 span {
@@ -50,20 +66,21 @@ header h1 span {
 
 header nav {
     width: 300px;
-    padding: 44px 0;
+    padding: 20px 0;
 }
 
 header nav ul {
+    margin: 0;    
     padding: 0;
-    margin: 0;
-    text-align: right;
+    list-style: none;
 }
 
 header nav ul li {
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 0 10px;
+    padding: 10px 0;
+    width: 100%;
 }
 
 header nav ul li a {
@@ -74,16 +91,23 @@ header nav ul li a {
 /********  MAIN STYLES ********/
 /******** TOP SECTION ********/
 .main-image img {
+    width: 100%;
     border-top: 3px solid #77a466;
     border-bottom: 3px solid #77a466;
 }
 
 .main-title h2 {
     color: #45610e;
-    margin: 25px 0;
+    padding: 5px 0;
 }
 
 /******** BOTTOM SECTION ********/
+.top-section,
+.bottom-section {
+    display: flex;
+    justify-content: center;
+}
+
 .bottom-section .content-wrapper {
     border-top: 5px solid #eee;
     border-bottom: 5px solid #eee;
@@ -93,21 +117,20 @@ header nav ul li a {
 .section-two,
 .section-three {
     box-sizing: border-box;
-    padding: 0 40px;
 }
 
 .section-one {
-    width: 350px;    
+    width: 100%;    
 }
 
 .section-two {
-    width: 500px;
-    border-left: 5px solid #eee;
-    border-right: 5px solid #eee;
+    width: 100%;
+    border-top: 5px solid #eee;
+    border-bottom: 5px solid #eee;
 }
 
 .section-three {
-    width: 350px;
+    width: 100%;
 }
 
 .bottom-section h3 {
@@ -121,18 +144,20 @@ header nav ul li a {
 
 .menu-list li {
     color: #45610e;
+    font-size: 1rem;
     line-height: 36px;
 }
 
 /******** FOOTER STYLES ********/
 footer {
-    text-align: center;
     margin-top: 8px;
+    display: flex;
+    justify-content: center;
 }
 
 footer span {
     font-family: "Galada", cursive;
     text-transform: lowercase;
     color: #45610e;
-    font-size: 14px;
+    font-size: .875rem;
 }
